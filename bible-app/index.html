@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bible Speech Practice</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="/manifest.json">
+</head>
+<body>
+  <div class="container" >
+    <h3>Welcome to Bible Recital App</h3>
+    <!-- Progress Bar -->
+    <div id="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+    <div id="progress-text">0 of 66 books complete</div>
+
+    <!-- Book Prompt -->
+    <div id="prompt">Loading...</div>
+    <p>Qoute a verse from Genesis to begin or Select a book.</p>
+
+    <!-- Book Selection Dropdowns -->
+    <select id="old-testament" style="margin-right: 10px;"></select>
+    <select id="new-testament"></select> <br><br>
+
+    <!-- Start Button -->
+    <button id="start-btn">Start Speaking</button> <br><br>
+
+    <!-- Previous Book Button -->
+    <button id="previous-btn">Previous Book</button>
+
+    <!-- Next Book Button (this will be dynamically updated) -->
+    <button id="next-btn">Next Book</button>
+
+    <!-- Display what was heard -->
+    <div id="heard" style="margin-top: 10px; font-style: italic;"></div>
+
+    <!-- Result Message -->
+    <div id="result"></div><br><br>
+    <h4>...developed by <a href="https://wa.me/message/X7KEIPL4NF2AB1">CodezManiaInc</a></h4>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
